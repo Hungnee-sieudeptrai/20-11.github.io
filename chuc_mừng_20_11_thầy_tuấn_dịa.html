@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chúc mừng 20/11 - Thầy Tuấn (Môn Địa)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b74de; /* xanh dương nổi bật */
+      --accent-2:#24c27a; /* xanh lá tươi */
+      --bg-1: linear-gradient(135deg,#f7f9fc 0%, #e8f7f5 100%);
+      --card-bg: rgba(255,255,255,0.95);
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 10px 30px rgba(11,116,222,0.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; font-family:'Montserrat',sans-serif; background:var(--bg-1);
+      display:flex; align-items:center; justify-content:center; padding:32px;
+    }
+    .stage{
+      width:100%; max-width:1100px; background:var(--card-bg); border-radius:18px; padding:28px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+    }
+    /* header */
+    .hero{
+      display:flex; gap:24px; align-items:center;
+    }
+    .photo{
+      width:150px; height:150px; border-radius:50%; overflow:hidden; flex:0 0 150px; box-shadow:0 8px 24px rgba(0,0,0,0.12); border:6px solid rgba(255,255,255,0.6); background:linear-gradient(180deg,#fff,#f3f6ff);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    .title{
+      flex:1; 
+    }
+    h1{margin:0; font-size:28px; letter-spacing:0.2px; color:#073763}
+    .sub{margin-top:8px; color:#234; font-weight:600}
+    .meta{margin-top:12px; color:#3b556b}
+
+    /* badge */
+    .badge{display:inline-block; background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:white; padding:8px 14px; border-radius:999px; font-weight:700; box-shadow:0 6px 18px rgba(11,116,222,0.18)}
+
+    /* message card */
+    .card{margin-top:22px; background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95)); border-radius:12px; padding:20px; box-shadow:0 6px 20px rgba(30,60,80,0.06);}
+    .greeting{font-size:18px; margin:0 0 8px 0; color:#0b3d5a}
+    .message{font-size:15px; line-height:1.5; color:#1f3a4a}
+
+    /* callout */
+    .callout{margin-top:16px; display:flex; gap:12px; align-items:center}
+    .glow{padding:12px 16px; background:linear-gradient(90deg, rgba(11,116,222,0.12), rgba(36,194,122,0.08)); border-radius:10px; font-weight:600}
+
+    /* footer */
+    .footer{display:flex; justify-content:space-between; align-items:center; margin-top:22px}
+
+    /* confetti */
+    .confetti-piece{position:absolute; width:10px; height:14px; opacity:0.95; will-change:transform;}
+
+    /* responsive */
+    @media (max-width:720px){
+      .hero{flex-direction:column; align-items:center; text-align:center}
+      .photo{width:120px; height:120px}
+      h1{font-size:22px}
+    }
+
+    /* subtle globe */
+    .globe{
+      position:absolute; right:-120px; top:-90px; width:420px; height:420px; opacity:0.08; background:radial-gradient(circle at 30% 30%, #0b74de, transparent 30%), radial-gradient(circle at 70% 70%, #24c27a, transparent 30%); border-radius:50%; transform:rotate(12deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" role="main" aria-labelledby="hero-title">
+
+    <div class="globe" aria-hidden="true"></div>
+
+    <header class="hero">
+      <div class="photo" id="teacher-photo">
+        <!-- Thay src bằng ảnh thầy thực tế -->
+        <img src="background: url('4068e6ed-dbc1-4e74-a414-5eebc6f8f1fc.png') center/cover no-repeat;
+" alt="Ảnh thầy Tuấn">
+      </div>
+      <div class="title">
+        <h1 id="hero-title">Chúc mừng 20/11 — Thầy Tuấn (Môn Địa)</h1>
+        <div class="sub">Người gieo mầm tri thức địa lý, dẫn dắt từng bản đồ và trái tim học trò.</div>
+        <div class="meta" style="margin-top:10px;"><span class="badge">Kính trọng • Tri ân</span> <span style="margin-left:10px;color:#345">Lớp 12A1</span></div>
+      </div>
+    </header>
+
+    <section class="card" id="main-card">
+      <p class="greeting">Thưa Thầy,</p>
+      <p class="message" id="message-text">
+        Nhân ngày Nhà giáo Việt Nam 20/11, tập thể lớp 6A1 xin gửi tới Thầy Tuấn lời cảm ơn sâu sắc nhất. Những bài học về Địa lý không chỉ dạy chúng em cách đọc bản đồ hay hiểu hiện tượng tự nhiên — mà còn mở ra cho chúng em cách nhìn thế giới, trân trọng quê hương và những con đường tương lai.
+      </p>
+
+      <div class="callout">
+        <div class="glow">Lời chúc tiêu đề: Chúc Thầy luôn mạnh khỏe, nhiệt huyết và vững tay phấn!</div>
+        <div style="flex:1"></div>
+        <div style="font-size:13px;color:#556">20/11/2025</div>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+        <button onclick="downloadCard()" style="padding:10px 14px;border-radius:10px;border:none; background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:white; font-weight:700; cursor:pointer; box-shadow:0 10px 26px rgba(11,116,222,0.14);">Tải thiệp</button>
+        <button onclick="toggleConfetti()" id="confBtn" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(11,116,222,0.12); background:white; cursor:pointer">Bật/Tắt confetti</button>
+        <button onclick="editMessage()" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(0,0,0,0.06); background:transparent; cursor:pointer">Sửa lời chúc</button>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div style="font-size:13px;color:#456">Sáng tạo bởi lớp 6A1 — Chúc Thầy 20/11 thật ý nghĩa.</div>
+      <div style="font-size:13px;color:#678">In được — Treo bảng được — Gửi link cũng xịn</div>
+    </footer>
+
+    <!-- confetti container -->
+    <div id="confetti-root" aria-hidden="true"></div>
+
+  </div>
+
+  <script>
+    // Confetti simple implementation (no libs)
+    const confettiRoot = document.getElementById('confetti-root');
+    let confettiOn = false;
+    let confettiInterval;
+
+    function makePiece(){
+      const el = document.createElement('div');
+      el.className = 'confetti-piece';
+      const w = Math.random()*12 + 6;
+      el.style.width = w + 'px';
+      el.style.height = (w*1.2) + 'px';
+      const colors = ['#0b74de','#24c27a','#ffd166','#ff6b6b','#6a5acd'];
+      el.style.background = colors[Math.floor(Math.random()*colors.length)];
+      el.style.left = (Math.random()*100) + '%';
+      el.style.top = '-10%';
+      el.style.transform = 'rotate('+(Math.random()*360)+'deg)';
+      el.style.opacity = Math.random()*0.9 + 0.4;
+      confettiRoot.appendChild(el);
+
+      const fall = el.animate([
+        { transform: el.style.transform, top: '-10%', opacity: el.style.opacity },
+        { transform: 'translateY(110vh) rotate('+(Math.random()*720)+'deg)', top: '110%', opacity: 1 }
+      ],{
+        duration: 3000 + Math.random()*2500,
+        easing: 'cubic-bezier(.2,.8,.2,1)'
+      });
+      fall.onfinish = ()=> el.remove();
+    }
+
+    function startConfetti(){
+      if(confettiOn) return;
+      confettiOn = true;
+      confettiInterval = setInterval(()=>{ for(let i=0;i<6;i++) makePiece(); }, 220);
+      document.getElementById('confBtn').innerText = 'Tắt confetti';
+    }
+    function stopConfetti(){
+      confettiOn = false; clearInterval(confettiInterval); document.getElementById('confBtn').innerText = 'Bật confetti';
+    }
+    function toggleConfetti(){ confettiOn ? stopConfetti() : startConfetti(); }
+
+    // Download card as PNG using html2canvas-like simple approach (fallback: open print)
+    function downloadCard(){
+      // Quick fallback: print the card (user can save as PDF)
+      window.print();
+    }
+
+    // Edit message inline
+    function editMessage(){
+      const p = document.getElementById('message-text');
+      const current = p.innerText.trim();
+      const newText = prompt('Sửa lời chúc (nhập văn bản mới):', current);
+      if(newText !== null) p.innerText = newText;
+    }
+
+    // small accessibility: press C to toggle confetti
+    document.addEventListener('keydown', (e)=>{ if(e.key.toLowerCase()==='c') toggleConfetti(); });
+
+    // auto highlight a bit on load
+    window.addEventListener('load', ()=>{
+      // gentle pulse on badge
+      const badge = document.querySelector('.badge');
+      badge.animate([
+        { transform:'scale(1)', boxShadow:'0 6px 18px rgba(11,116,222,0.18)' },
+        { transform:'scale(1.06)', boxShadow:'0 12px 28px rgba(11,116,222,0.22)' },
+        { transform:'scale(1)', boxShadow:'0 6px 18px rgba(11,116,222,0.18)' }
+      ],{duration:2200, iterations:2});
+      // short confetti burst
+      for(let i=0;i<12;i++) setTimeout(()=>makePiece(), i*60);
+    });
+  </script>
+</body>
+</html>
